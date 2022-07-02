@@ -44,5 +44,11 @@ class TestKaraokeBar(unittest.TestCase):
         self.song13 = Song("Marshmallo", "Happier")
         
 
-        def test_karaoke_bar_has_name(self):
-            self.assertequa
+    def test_karaoke_bar_has_name(self):
+        self.assertEqual("Little Karaoke Bar", self.KaraokeBar.name)
+
+    def test_karaoke_bar_has_till(self):
+        self.assertEqual(1000, self.KaraokeBar.till)
+
+    def test_karaoke_bar_has_set_number_of_rooms(self):
+        self.assertEqual(4, self.KaraokeBar.rooms)
