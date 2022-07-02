@@ -1,4 +1,3 @@
-from this import s
 import unittest
 from src.karaoke_bar import KaraokeBar
 from src.room import Room
@@ -45,4 +44,5 @@ class TestKaraokeBar(unittest.TestCase):
         self.song13 = Song("Marshmallo", "Happier")
         
 
-        
+        def test_karaoke_bar_has_name(self):
+            self.assertequa
