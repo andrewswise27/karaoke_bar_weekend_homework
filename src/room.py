@@ -12,6 +12,7 @@ class Room:
 
     def remove_guest_from_room(self, name):
         self.guest.remove(name)
+        return self.guest
     
     def add_song_to_room(self, song):
         self.song.append(song)
