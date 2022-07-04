@@ -6,8 +6,10 @@ class Room:
         self.capacity = _capacity
         
     def add_guest_to_room(self, name):
-        if len(self.guest) < 4:
+        if len(self.guest) < self.capacity:
             self.guest.append(name)
+        else:
+            print("Sorry the room is full")
         return self.guest
 
     def remove_guest_from_room(self, name):
